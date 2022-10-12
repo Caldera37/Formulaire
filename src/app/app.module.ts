@@ -13,12 +13,12 @@ import { LoginFormComponentComponent } from './login-form-component/login-form-c
 import { CreateonomatopiaComponent } from './createonomatopia/createonomatopia.component';
 import { ButtonComponent } from './button/button.component';
 import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
-
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
   declarations: [AppComponent, UserComponent, MenuComponent, DeveloperComponent, SkillComponent, LoginFormComponentComponent, CreateonomatopiaComponent,ButtonComponent, CocktailListComponent],
-  imports: [BrowserModule, RouterModule.forRoot(ROUTES), FormsModule], 
+  imports: [BrowserModule, HttpClientModule, RouterModule.forRoot(ROUTES), FormsModule], 
   providers: [],
   bootstrap: [AppComponent]
 })
