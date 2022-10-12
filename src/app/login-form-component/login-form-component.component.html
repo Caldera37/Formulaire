@@ -1,0 +1,19 @@
+<form #loginFormComponent="ngForm" (ngSubmit)="onSubmit()">
+
+    <fieldset>
+  
+        <label for="email">E-mail</label>
+    
+        <input id="email" name="email" type="text" [(ngModel)]="login.email" #email="ngModel" required minlength="5" maxlength="15"/>
+    
+      </fieldset>
+
+      <fieldset>
+  
+        <label for="password">Mot de Passe</label>
+    
+        <input id="password" name="password" type="text" [(ngModel)]="login.password" #email="ngModel" required minlength="5" maxlength="15"/>
+    
+      </fieldset>
+
+    </form>      

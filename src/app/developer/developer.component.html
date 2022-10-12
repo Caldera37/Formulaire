@@ -1,0 +1,9 @@
+<p>Titre: {{user.title}}</p>
+<p>Nom: {{user.lastname}}</p>
+<p>Hp: {{user.hp}}</p>
+<p>Gender: {{user.gender}}</p>
+<p>Bio: {{user.bio}}</p>
+
+<p>Grimoire:</p>
+<app-skill *ngFor="let skill of user.skillList" [skill]="skill"></app-skill>   
+

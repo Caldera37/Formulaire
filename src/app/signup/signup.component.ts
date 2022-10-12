@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import { Order } from '../models/model';
 
 @Component({
